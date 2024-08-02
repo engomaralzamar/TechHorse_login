@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Sign_In </title>
+    <link rel="stylesheet" href="Engsignin.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+
+<body>
+  <div class="container">
+    <div class="title">Sign in</div>
+    <h2 style="color:red"><?php echo $msg ?></h2>
+    <div class="content">
+       <form action="index.html" method="post"><!-- change where to send the form-data--->
+        <div class="user-details">    
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input  name="email" type="email" placeholder="Enter your email" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input  name="password" type="password" placeholder="Enter your password" autocomplete="new-password" required>
+          </div>
+         <input href="#" hidden type="text">
+        </div>
+        <div class="Loggin-details">
+            <input type="radio" value="monitor" name="user" id="dot-1" required>
+            <input type="radio" value="engineer" name="user"  id="dot-2" required>
+            <input type="radio" value="client" name="user"  id="dot-3" required>
+            <span class="loggin-title">Sign in As</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Manager</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Specialist</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Client</span>
+              </label>
+              
+            </div>
+        <div class="button">
+          <button type="submit" name="signin" class="btn1">Sign in</button>
+        </div>
+        <p><span class="loggin-title">New Client? <a style="color:darkred" href="Signup.html">Register here</a></span></p>
+      </form>
+    </div>
+</body>
+</html>
